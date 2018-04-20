@@ -1,0 +1,84 @@
+.FavBeerDiv {
+  height: 200px;
+  background-color: black;
+  color: black;
+  width: 600px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.FavBeerLeft {
+  background-color: rgb(245, 245, 245);
+  height: 200px;
+  width: 250px;
+}
+
+.FavBeerLeftCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.FavBeerDiv h3 {
+  background-color: rgb(225, 225, 225);
+  height: 30px;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.FavBeerRight {
+  background-color: rgb(210, 210, 210);
+  height: 200px;
+  width: 350px;
+}
+
+.FavBeerRight h4 {
+  color: white;
+  /* background-color: rgb(55, 39, 30); */
+  background-color: rgb(80, 80, 80);
+  margin-top: 0;
+}
+
+.FavBeerRight h5 {
+  color: yellow;
+  text-shadow: 1px 1px 1px black;
+  font-size: 36px;
+  font-weight: bolder;
+  margin: -15px auto 5px;
+}
+
+.FavBeerRight p {
+  padding: 5px;
+  height: 60px;
+  width: 340px;
+  background-color: white;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+.FavBeerRight button {
+  width: 100px;
+  background-color: yellow;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+
+.FavBeerRight button:focus {
+  outline: none;
+}
+
+.FavBeerRight textarea {
+  height: 40px;
+  width: 320px;
+}
+
+.FavBeerRight input {
+  width: 40px;
+}

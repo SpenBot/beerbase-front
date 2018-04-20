@@ -1,2 +1,2 @@
 # beerbase-front
-react front-end for beer-base
+react frontend for beerbase

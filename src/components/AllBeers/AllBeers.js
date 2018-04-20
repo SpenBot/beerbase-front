@@ -1,0 +1,81 @@
+
+//// DEPENDENCIES, MODULES, COMPONENTS, STYLES ///////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+import React, { Component } from 'react';
+
+import axios from 'axios'
+import { API_URL } from '../../urls'
+
+import BeerCard from '../BeerCard/BeerCard'
+
+import './AllBeers.css';
+
+
+
+
+//// COMPONENT CLASS /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+class AllBeers extends Component {
+
+
+
+//// CONSTRUCTOR /////////////////////////////////////////////////////////
+  constructor() {
+    super()
+    this.state = {
+      beers: [],
+    }
+  }
+
+
+
+//// DID MOUNT //////////////////////////////////////////////////////////
+  componentDidMount() {
+
+    axios.get(`${API_URL}/api/beers`)
+    .catch(err => console.log(err))
+    .then((res) => {
+      this.setState({
+        beers: res.data
+      })
+    })
+  }
+
+
+
+
+
+
+//// RENDER //////////////////////////////////////////////////////////////
+  render() {
+
+    let beers = this.state.beers ?
+      this.state.beers.map((beer, indx) => {
+        return (
+          <BeerCard beer={beer} key={indx} user={this.props.user}/>
+        )
+      })
+      : null
+
+//// RETURN //////////////////////////////////////////////////////////////
+    return (
+      <div className="AllBeersDiv">
+        {beers}
+      </div>
+    );
+  }
+}
+
+
+
+
+//// EXPORT COMPONENT ////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+export default AllBeers;
+
+
+
+// END ///////////////////////////////////////////////////////////////////

@@ -1,0 +1,32 @@
+.EditFormDiv form{
+  margin: 30px auto;
+  height: 200px;
+  width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.EditFormDiv form input {
+  height: 30px;
+  width: 400px;
+  font-size: 18px;
+}
+
+.EditFormDiv form .submit {
+  height: 50px;
+  width: 200px;
+  font-size: 24px;
+  font-weight: bolder;
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 2px 2px 2px rgb(80, 80, 80)
+}
+
+.EditFormDiv form .submit:hover {
+  cursor: pointer;
+}

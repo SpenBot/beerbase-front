@@ -1,0 +1,40 @@
+.UserAccountDiv {
+  min-height: 600px;
+  width: 700px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(220, 220, 220);
+}
+
+.UserAccountSignedIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.UserAccountSignedIn img {
+  height: 200px;
+  width: 200px;
+}
+
+.UserAccountSignedOut h2 {
+  margin: 0;
+  font-size: 38px;
+}
+
+.UserAccountSignedOut {
+  padding-top: 40px;
+}
+
+.UserAccountDiv button {
+  box-shadow: 1px 1px 1px rgb(120, 120, 120)
+}
+
+.UserAccountDiv button:hover {
+  cursor: pointer;
+}

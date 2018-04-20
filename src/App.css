@@ -1,0 +1,72 @@
+.AppDiv {
+  text-align: center;
+}
+
+.AppDiv header {
+  background-color: black;
+  height: 90px;
+
+  background-image: url('./header-image-v2-copy.png');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: left;
+  padding-top: 25px;
+}
+
+.AppDiv header h1 {
+  font-family: 'Kalam', sans-serif;
+  color: white;
+  font-size: 54px;
+  font-weight: bolder;
+
+  margin-top: 0;
+  margin-bottom: 3px;
+  margin-left: 70px;
+
+  width: 400px;
+  line-height: 50px;
+  letter-spacing: 10px;
+}
+
+.AppDiv header h3 {
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+  margin-left: 70px;
+}
+
+.AppDiv nav {
+  /* background-color: rgb(55, 39, 30); */
+  background-color: rgb(23, 15, 11);
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.AppDiv nav a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+.AppDiv main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin: 20px auto;
+  width: 1000px;
+  min-height: 600px;
+}
+
+#sideColImg {
+  height: 120px;
+  width: 250px;
+  box-shadow: 5px 5px 5px rgb(120, 120, 120);
+  margin-top: 20px;
+}

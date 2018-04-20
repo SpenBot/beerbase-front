@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(170, 141, 121);
+  background-image: url("https://www.transparenttextures.com/patterns/cardboard-flat.png");
+  
+  /* background-color: rgb(222, 214, 206); */
+  /* background-color: rgb(242, 239, 235); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/light-paper-fibers.png"); */
+}

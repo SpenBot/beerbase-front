@@ -1,0 +1,62 @@
+.HomeDiv {
+  min-height: 600px;
+  width: 800px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeMainImgDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+#homeMainImg {
+  /* transform: scale(0.8, 0.8); */
+  margin: 0;
+  margin-bottom: 15px;
+  width: 440px;
+  height: 300px;
+}
+
+#homeMainImgText {
+  color: yellow;
+  background-color: black;
+  width: 170px;
+  height: 300px;
+  font-size: 34px;
+  font-weight: bolder;
+  font-family: 'Kalam', sans-serif;
+}
+
+#homeMainImgText p {
+  margin-top: 10px;
+}
+
+.homeSecDiv img {
+  margin: 0 auto;
+}
+
+.homeSecDiv h4 {
+  background-color: white;
+  margin: 0 auto;
+  width: 400px;
+  height: 30px;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.homeSecDiv {
+  height: 120px;
+  background-color: white;
+}
+
+.homeMore {
+  display: flex;
+  flex-direction: row;
+}

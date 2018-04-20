@@ -1,0 +1,73 @@
+.SideBarDiv {
+  /* background-color: rgb(23,8,3); */
+  background-color: rgb(14, 7, 2);
+  background-image: url("https://www.transparenttextures.com/patterns/tileable-wood.png");
+
+  height: 360px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(120, 120, 120);
+  margin: 0 auto;
+  color: white;
+
+  padding-top: 15px;
+
+  text-shadow: 1px 1px 1px rgb(10, 10, 10);
+}
+
+.SideBarDiv h3 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.SideBarDiv img {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+#signOutButton {
+  height: 30px;
+  width: 120px;
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 18px;
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgb(10, 10, 10);
+}
+
+hr {
+  width: 200px;
+  height: 3px;
+  background-color: white;
+  margin: 20px auto 15px;
+}
+
+.SideBarDiv p {
+  margin: 5px auto 0;
+  font-size: 12px;
+  line-height: 10px;
+  width: 200px;
+  color: yellow;
+}
+
+.SideBarDiv input {
+  margin: 0 auto;
+  width: 180px;
+  height: 20px;
+}
+
+.SideBarDiv h5 {
+  margin: 5px auto 0;
+  letter-spacing: 2px;
+}
+
+.sideReadOnly {
+  outline: none;
+  background-color: rgb(140, 140, 140)
+}
