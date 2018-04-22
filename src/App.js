@@ -208,8 +208,8 @@ class App extends Component {
               )}
             />
 
-            <Route path="/beerbase/*"
-              render={() => <Redirect to="/beerbase/" />}
+            <Route path="/*"
+              render={() => <Redirect to="/beerbase" />}
             />
 
           </Switch>
