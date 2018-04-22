@@ -36,23 +36,6 @@ class App extends Component {
 
 
 
-
-//// DID MOUNT //////////////////////////////////////////////////////////
-  // componentDidMount() {
-  //
-  //   let spenId = "5ad8e90ccab1b005a0deda44"
-  //
-  //   axios.get(`${API_URL}/api/users/${spenId}`)
-  //   .catch(err => console.log(err))
-  //   .then((res) => {
-  //     this.setState({
-  //       user: res.data
-  //     })
-  //   })
-  //
-  // }
-
-
 //// CHECK USER //////////////////////////////////////////////////////////
   checkUser(usernameInput) {
 
@@ -181,10 +164,10 @@ class App extends Component {
         </header>
 
         <nav>
-          <Link to="/">HOME</Link>
-          <Link to="/beers">BEER LIBRARY</Link>
-          {this.state.user && <Link to="/favorites">FAVORITES</Link>}
-          <Link to="/user">ACCOUNT</Link>
+          <Link to="/beerbase">HOME</Link>
+          <Link to="beerbase/beers">BEER LIBRARY</Link>
+          {this.state.user && <Link to="beerbase/favorites">FAVORITES</Link>}
+          <Link to="beerbase/user">ACCOUNT</Link>
 
         </nav>
 
@@ -193,21 +176,21 @@ class App extends Component {
           <Switch>
 
             <Route
-              exact path='/'
+              exact path='/beerbase/'
               render={() => (
                 <Home />
               )}
             />
 
             <Route
-              path='/beers'
+              path='/beerbase/beers'
               render={() => (
                 <AllBeers user={this.state.user}/>
               )}
             />
 
             <Route
-              path='/user'
+              path='/beerbase/user'
               render={() => (
                 <UserAccount
                   user={this.state.user}
@@ -217,7 +200,7 @@ class App extends Component {
             />
 
             <Route
-              path='/favorites'
+              path='/beerbase/favorites'
               render={() => (
                 <Favorites
                   user={this.state.user}
@@ -225,8 +208,8 @@ class App extends Component {
               )}
             />
 
-            <Route path="/*"
-              render={() => <Redirect to="/" />}
+            <Route path="/beerbase/*"
+              render={() => <Redirect to="/beerbase/" />}
             />
 
           </Switch>
