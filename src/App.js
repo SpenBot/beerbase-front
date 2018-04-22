@@ -165,9 +165,9 @@ class App extends Component {
 
         <nav>
           <Link to="/beerbase">HOME</Link>
-          <Link to="beerbase/beers">BEER LIBRARY</Link>
-          {this.state.user && <Link to="beerbase/favorites">FAVORITES</Link>}
-          <Link to="beerbase/user">ACCOUNT</Link>
+          <Link to="/beerbase/beers">BEER LIBRARY</Link>
+          {this.state.user && <Link to="/beerbase/favorites">FAVORITES</Link>}
+          <Link to="/beerbase/user">ACCOUNT</Link>
 
         </nav>
 
@@ -176,7 +176,7 @@ class App extends Component {
           <Switch>
 
             <Route
-              exact path='/beerbase/'
+              exact path='/beerbase'
               render={() => (
                 <Home />
               )}
