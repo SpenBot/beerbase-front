@@ -13,6 +13,7 @@ import SideBar from './components/SideBar/SideBar'
 import AllBeers from './components/AllBeers/AllBeers'
 import UserAccount from './components/UserAccount/UserAccount'
 import Favorites from './components/Favorites/Favorites'
+import ServerAwakeStatus from './components/ServerAwakeStatus/ServerAwakeStatus'
 
 import './App.css';
 
@@ -29,9 +30,54 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      user: null
+      user: null,
+      serverAwake: false
     }
   }
+
+
+
+//// COMPONENT DID MOUNT /////////////////////////////////////////////////
+
+  componentDidMount() {
+
+    let serversAwake = 0
+
+    axios.get(`${API_URL}/api/beers/`)
+    .catch(err => console.log(err))
+    .then((res)=> {
+      console.log("server awake: beers")
+      console.log(res.data)
+      serversAwake += 1
+
+      if (serversAwake >= 2) {
+        this.setState ({
+          serverAwake: true
+        })
+      }
+
+    })
+
+    axios.get(`${API_URL}/api/users/`)
+    .catch(err => console.log(err))
+    .then((res)=> {
+      console.log("server awake: users")
+      console.log(res.data)
+      serversAwake += 1
+
+      if (serversAwake >= 2) {
+        this.setState ({
+          serverAwake: true
+        })
+      }
+
+    })
+  }
+
+
+
+
+
 
 
 
@@ -178,7 +224,7 @@ class App extends Component {
             <Route
               exact path='/beerbase'
               render={() => (
-                <Home />
+                this.state.serverAwake ? <Home /> : <ServerAwakeStatus/>
               )}
             />
 
