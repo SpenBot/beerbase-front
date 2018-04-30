@@ -206,7 +206,7 @@ class App extends Component {
 
         <header>
           <h1>BEER BASE</h1>
-          <h3>catalogue, review, and share your favorite beers</h3>
+          <h3>catalog, review, and share your favorite beers</h3>
         </header>
 
         <nav>
